@@ -8,7 +8,11 @@
     <link href="css/style.css" rel='stylesheet' type='text/css'/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/
+    css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://mianfolio.com/ultimateblocks/v2.1.3/elements/bundles/font-awesome.min.css" >
+
+
     <script type="application/x-javascript">
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -73,9 +77,9 @@
 <div class="topHeader">
     <div class="container">
         <div class="row">
-          <div class="digitalTransformation">
-            <p>Lunching of <span>Digital Training Campaign</span> for tourism and <span> tourism development through digital transformation  </span> in <strong>20 cities</strong> of Nepal</p>
-          </div>
+            <div class="digitalTransformation">
+                 <span>Tourism development through digital transformation </span>
+            </div>
             <!-- <div class="col-md-6 col-sm-12 welcomeText">
                 <span>Discover Nepal</span>The official tourism website for Nepal | <a
                     href="https://www.welcomenepal.cn/" title="请看我们中文网站" target="_blank">请看中文网站</a>
@@ -101,7 +105,7 @@
             <div class="col-md-12">
                 <div class="header-left">
                     <div class="logo">
-                        <a href="index.html">World Tourism <span>Day 2018</span></a>
+                        <a href="index.html"><img src="images/logo-w.jpg" alt="" class="img-responsive" style=" height: 70px;"></a>
                     </div>
                     <div class="menu">
                         <a class="toggleMenu" href="#"><img src="images/nav.png" alt=""/></a>
@@ -172,35 +176,13 @@
     });
 
     var legend = L.control({position: 'topright'});
-
-
     legend.onAdd = function (map) {
-        var hashcolor = ['red','#c1a73e','#da8b4a','#26a9e8','#40a500','#e271a1','#900e94'];
-
-
-
         var div = L.DomUtil.create('div', 'legend');
-        var labels = [
-            "Province No. 1",
-            "Province No. 2",
-            "Province No. 3",
-            "Province No. 4",
-            "Province No. 5",
-            "Province No. 6",
-            "Province No. 7"
-        ];
-        var grades = [1, 2, 3, 4, 5, 6, 7];
-        div.innerHTML = '<div><h6>Province Index</h6></div>';
-        for (var i = 0; i < grades.length; i++) {
-            div.innerHTML += '<i style="background:'
-                + hashcolor[i] + '">&nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;'
-                + labels[i] + '<br />';
-        }
+        div.innerHTML = '<div class="features-bar"><h6>Digital Marketing Training in 20 cites of Nepal</h6></div>';
         return div;
     }
 
     legend.addTo(map);
-
 
     function handleLayer(feature, layer) {
         var name_district = feature.properties.FIRST_DIST
@@ -221,7 +203,7 @@
 
         function getProvinceColor(state) {
             if (P.includes(state)) {
-                return 'red';
+                return '#7f582c';
             } else if (P1.includes(state)) {
                 return '#c1a73e';
             } else if (P2.includes(state)) {
@@ -240,7 +222,6 @@
             else if (P6.includes(state)) {
                 return '#900e94';
             }
-
         }
 
 
@@ -456,22 +437,37 @@
 
 </div>
 </div>
-<div class="content-bottom">
-    <div class="container">
-        <div class="row content_bottom-text">
-            <div class="col-md-7 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
-                <h3>About Event</h3>
-                <p class="m_1">Today, people and businesses connect, exchange information and execute transactions in ways never before imagined. The combination of digital platforms, user-generated content and feedback, social media integration, global positioning services, and the use of big data and artificial intelligence, has transformed the way people experience, consume and share information.</p>
-                <p class="m_2">Nepal Tourism Board has marked the World Tourism Day by bringing ICT awareness and digital capacity building in 20 emerging cities of Nepal for tourism. For this campaign, Nepal Tourism Board has prepared for one-day workshops in 20 different cities all around Nepal. In every city, there would be 25-30 participants from tourism background, like a travel agency, hotels, online travel agency, travel activities. This program will be a good opportunity for them to learn about digital technologies which will help them to boost their business. While the Tourism sector has been at the forefront of digital disruption, exponential technological change means that the sector must innovate, and all stakeholders must collaborate, on a near-constant basis in order to remain competitive.</p>
+<div class="content1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7 bg-col1 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+                <h2 >About Event</h2>
+                <p >Today, people and businesses connect, exchange information and execute transactions in
+                    ways never before imagined. The combination of digital platforms, user-generated content and
+                    feedback, social media integration, global positioning services, and the use of big data and
+                    artificial intelligence, has transformed the way people experience, consume and share
+                    information.</p><br>
+                <p>Nepal Tourism Board has marked the World Tourism Day by bringing ICT awareness and
+                digital capacity building in 20 emerging cities of Nepal for tourism. For this campaign, Nepal
+                Tourism Board has prepared for one-day workshops in 20 different cities all around Nepal. In every
+                city, there would be 25-30 participants from tourism background, like a travel agency, hotels,
+                online travel agency, travel activities. This program will be a good opportunity for them to learn
+                about digital technologies which will help them to boost their business. While the Tourism sector
+                has been at the forefront of digital disruption, exponential technological change means that the
+                sector must innovate, and all stakeholders must collaborate, on a near-constant basis in order to
+                remain competitive.</p>
             </div>
-            <div class="col-md-5 wow slideInRight" data-wow-duration="2s" data-wow-delay="0.5s">
-                <div class="aboutImg">
-                    <img src="images/nepaltour.jpg" alt="" class="img-responsive">
-                </div>
+            <div class="col-md-5 bg-col2 wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
             </div>
+
         </div>
     </div>
-</div>
+</div><!-- /.content1 -->
+
+
+
+
+
 <div class="features">
     <div class="container">
         <h3 class="m_3">Event Schedule</h3>
@@ -485,10 +481,9 @@
                     <div class="content">
                         <p>Event Information</p>
                     </div>
-                </a></div
+                </a>
             </div>
             <h4 class="m_4"><a href="#">Dharan City</a></h4>
-            <p class="m_5">Date: 2018/02/18 9am-10pm</p>
         </div>
         <div class="col-md-3 top_box wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
             <div class="view view-ninth"><a href="single.html">
@@ -500,7 +495,6 @@
                 </div>
             </a></div>
             <h4 class="m_4"><a href="#">Pokhara City</a></h4>
-            <p class="m_5">Date: 2018/02/18 9am-10pm</p>
         </div>
         <div class="col-md-3 top_box wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
             <div class="view view-ninth"><a href="single.html">
@@ -512,7 +506,6 @@
                 </div>
             </a></div>
             <h4 class="m_4"><a href="#">Biratnagar</a></h4>
-            <p class="m_5">Date: 2018/02/18 9am-10pm</p>
         </div>
         <div class="col-md-3 top_box1 wow slideInUp" data-wow-duration="2s" data-wow-delay="0.5s">
             <div class="view view-ninth"><a href="single.html">
@@ -524,7 +517,6 @@
                 </div>
             </a></div>
             <h4 class="m_4"><a href="#">Namchey Bazar</a></h4>
-            <p class="m_5">Date: 2018/02/18 9am-10pm</p>
         </div>
     </div>
 </div>
@@ -532,7 +524,7 @@
 <div class="features-container impact-container">
     <div class="container">
         <div class="row">
-            <h3 class="m_3 m_3_title">Project Impact</h3>
+            <h3 class="m_3 m_3_title">Estimated Impact</h3>
             <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                 <div class="featuresBox">
                     <div class="features-icon">
@@ -575,7 +567,7 @@
                     <div class="features-content">
                         <h1>700</h1>
                         <h3>
-                            <a>Target Audience  </a>
+                            <a>Target Audience </a>
                         </h3>
 
                     </div>
@@ -589,10 +581,10 @@
                         <img src="images/male-user.png" alt="" class="img-responsive">
                     </div>
                     <div class="features-content">
-                        <h1>105</h1>
+                        <h1>210</h1>
 
                         <h3>
-                            <a>Hospitality  Industry</a>
+                            <a>Hospitality  <br>Industry</a>
                         </h3>
                     </div>
                     <div class="read">
@@ -605,10 +597,10 @@
                         <img src="images/charwoman.png" alt="" class="img-responsive">
                     </div>
                     <div class="features-content">
-                        <h1>350</h1>
+                        <h1>315</h1>
 
                         <h3>
-                            <a>Tour & trekking  professionals </a>
+                            <a>Tour & trekking <br> professionals </a>
                         </h3>
 
                     </div>
@@ -621,10 +613,10 @@
                         <img src="images/family.png" alt="" class="img-responsive">
                     </div>
                     <div class="features-content">
-                        <h1>20 - 40</h1>
+                        <h1>175</h1>
 
                         <h3>
-                            <a>Age Group </a>
+                            <a>Local <br>Authorities</a>
                         </h3>
 
                     </div>
@@ -640,32 +632,46 @@
 
 <div class="organizedBy">
     <div class="container">
+
         <div class="row">
-            <div class="col-md-3 organizedTitle">
-                Organized <span>By</span>
+            <div class="col-md-2 col-lg-offset-2">
             </div>
-            <div class="col-md-9 organizerLogo">
+            <div class="col-md-6 organizerLogo">
                 <img src="images/ntb.png" alt="" class="img-responsive">
                 <img src="images/wtd.png" alt="" class="img-responsive">
+            </div>
+
+            <div class="col-md-2 col-lg-offset-2">
             </div>
         </div>
     </div>
 </div>
 
 
-<div class="footer">
+
+<section id="footer7">
     <div class="container">
         <div class="buddhaEye">
             <img src="images/buddhaeye.png" alt="" class="img-responsive">
         </div>
-        <p>&copy; 2018. Nepal Tourism Board. All Rights Reserved.</p>
-        <img style="max-height:40px; margin:0 auto" src="https://welcomenepal.com/images/google-play.png"
-             alt="welcomenepal"></a>
-    </div>
-</div>
-</div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/nepaltourismboard"><span class="fa fa-facebook"></span></a>
+            <a href="https://twitter.com/nepaltourismb"><span class="fa fa-twitter" ></span></a>
+            <a href="https://www.youtube.com/channel/UC2SJQgLtP-whF6M4K_m7XAA"><span class="fa fa-youtube"></span></a>
+        </div>
 
-<script>
+        <ul class="list-inline">
+            <li><a href="./cities.html">Cities</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./apply.html">Apply</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+
+        </ul>
+    </div>
+    <p class="copyright">© 2018. Nepal Tourism Board. All Rights Reserved.</p>
+
+
+    <script>
 
     $(document).ready(function () {
         $('#overlay').fadeIn(300);
