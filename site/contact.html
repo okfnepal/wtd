@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>World Tourism Day 2018</title>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <script type="application/x-javascript">
+    addEventListener("load", function() {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <!--<script src="js/jquery.easydropdown.js"></script>-->
+  <!--start slider -->
+  <link rel="stylesheet" href="css/fwslider.css" media="all">
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/fwslider.js"></script>
+  <!--end slider -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".dropdown img.flag").addClass("flagvisibility");
+
+      $(".dropdown dt a").click(function() {
+        $(".dropdown dd ul").toggle();
+      });
+
+      $(".dropdown dd ul li a").click(function() {
+        var text = $(this).html();
+        $(".dropdown dt a span").html(text);
+        $(".dropdown dd ul").hide();
+        $("#result").html("Selected value is: " + getSelectedValue("sample"));
+      });
+
+      function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+      }
+
+      $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dropdown"))
+          $(".dropdown dd ul").hide();
+      });
+
+
+      $("#flagSwitcher").click(function() {
+        $(".dropdown img.flag").toggleClass("flagvisibility");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="topHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 welcomeText">
+          <span>Discover Nepal</span>The official tourism website for Nepal | <a href="https://www.welcomenepal.cn/" title="请看我们中文网站" target="_blank">请看中文网站</a>
+        </div>
+        <div class="col-md-5 col-sm-12 text-right topTextTender">
+          Visit our <a target="_blank" href="https://trade.welcomenepal.com/">trade site</a> for VN2020 notices &amp; all trade updates<br>For participation in Fairs/Sales Mission and Tender/Quotation, <a target="_blank" href="https://tenders.welcomenepal.com/" title="Trade Fairs and Tenders | Nepal Tourism Board">click here</a>
+        </div>
+        <div class="col-md-1 col-sm-12 androidDwIcon">
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ntb.welcomenepal">
+            <img style="max-height:40px;margin-left:10px;" src="https://welcomenepal.com/images/google-play.png" alt="welcomenepal"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-left">
+            <div class="logo">
+              <a href="index.html"><img src="images/logo.png" alt=""/></a>
+            </div>
+            <div class="menu">
+              <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+              <ul class="nav" id="nav">
+                <li><a href="cities.html">Cities</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="apply.html">Apply</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                <div class="clear"></div>
+              </ul>
+              <script type="text/javascript" src="js/responsive-nav.js"></script>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+     <div class="main">
+      <div class="shop_top featured-cities contact-holder">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+				  <div class="map">
+					<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=85.31487822532655%2C27.700456976705954%2C85.31918048858644%2C27.70337319314744&amp;layer=mapnik&amp;marker=27.701915094668315%2C85.31702935695648"></iframe><br><small><a href="https://www.openstreetmap.org/export/embed.html?bbox=85.31487822532655%2C27.700456976705954%2C85.31918048858644%2C27.70337319314744&amp;layer=mapnik&amp;marker=27.701915094668315%2C85.31702935695648" style="color:#666;text-align:left;font-size:12px"></a></small>
+				  </div>
+				</div>
+				<div class="col-md-5">
+					<p class="m_8">Nepal Tourism Board (NTB) is the statutory body instituted by an act of parliament to function as a model agency with public-private partnership approach for the development, expansion and promotion of Nepalese tourism.</p>
+					<div class="address">
+				                <p><b>Nepal Tourism Board</b></p>
+						   		<p>Pradarshani Marg, Kathmandu</p>
+				   		<p>Phone: 01-4256909</p>
+				   		<p>P.O Box: 11018</p>
+				 	 	<p>Email: <span>info[at]welcomenepal.com</span></p>
+				   		<p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+				   </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 contact">
+				  <form method="post" action="contact-post.html">
+					<div class="to">
+                     	<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+					 	<input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+					</div>
+					<div class="text">
+	                   <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+	                   <div class="form-submit">
+			           <input name="submit" type="submit" id="submit" value="Submit"><br>
+			           </div>
+	                </div>
+	                <div class="clear"></div>
+                   </form>
+			     </div>
+		    </div>
+	     </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+      <div class="container">
+          <div class="buddhaEye">
+            <img src="images/buddhaeye.png" alt="" class="img-responsive">
+          </div>
+          <p>&copy; 2018. Nepal Tourism Board. All Rights Reserved.</p>
+            <img style="max-height:40px; margin:0 auto" src="https://welcomenepal.com/images/google-play.png" alt="welcomenepal"></a>
+      </div>
+    </div>
+</div>
+</body>
+
+</html>
